@@ -12,7 +12,7 @@ output.dummy(fallible=true,backup_playlist)
 
 live_dj = input.harbor("live",port=9000)
 
-on_fail = single("./technical_difficulties.mp3")
+on_fail = single("./technical_difficulties.wav")
 
 source = fallback(track_sensitive=false,
                   [live_dj,backup_playlist,on_fail])
