@@ -31,3 +31,6 @@ output.icecast(%mp3,id="icecast",
                icy_metadata="true",description="cool radio",
                url="http://myradio.fm",
                source)
+
+# dump live_dj recordings to a file
+output.file(%mp3, "./live_dj.mp3", live_dj,fallible=true)
