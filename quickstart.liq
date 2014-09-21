@@ -33,4 +33,5 @@ output.icecast(%mp3,id="icecast",
                source)
 
 # dump live_dj recordings to a file
-output.file(%mp3, "./live_dj.mp3", live_dj,fallible=true)
+time_stamp = '%m-%d-%Y, %H:%M:%S'
+output.file(%mp3, "./live_dj_#{time_stamp}.mp3", live_dj,fallible=true)
