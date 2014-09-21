@@ -18,7 +18,7 @@ source = fallback(track_sensitive=false,
                   [live_dj,backup_playlist,on_fail])
 
 # We output the stream to an icecast
-# server, in ogg/vorbis format.
+# server, in ogg/vorbis and mp3 format.
 output.icecast(%vorbis,id="icecast",
                mount="myradio.ogg",
                host="localhost", password="hackme",
